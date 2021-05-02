@@ -6,21 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      media="screen"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
     />
     <title>Document</title>
   </head>
   <body>
-    <div id="content">
-      <div class="tabs is-right is-small is-toggle">
+    <div
+      id="content"
+      class="tabs is-toggle is-flex is-justify-content-space-between is-align-items-center mt-3 mx-3"
+    >
+      <div class="is-toggle">
         <ul>
-          <li class="is-active"><a>Pictures</a></li>
-          <li><a><span class="icon-text">
-      <span class="icon">
-        <i class="fas fa-utensils"></i>
-      </span>Menu</a></li>
-          <li><a>Videos</a></li>
-          <li><a>Documents</a></li>
+          <li class="is-active"><a>Home</a></li>
+          <li><a href="#">Info</a></li>
+        </ul>
+      </div>
+      <div class="is-toggle is-toggle-rounded is-right">
+        <ul>
+          <li class="is-active">
+            <a>
+              <span class="icon is-small"><i class="fas fa-image"></i></span>
+              <span>Pictures</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="fas fa-music"></i></span>
+              <span>Music</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="fas fa-film"></i></span>
+              <span>Videos</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="fas fa-file-alt"></i></span>
+              <span>Documents</span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
