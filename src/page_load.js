@@ -1,6 +1,7 @@
 const content = document.getElementById('content');
 const ghostDiv = document.createElement('div');
 ghostDiv.classList.add('container');
+
 const pageLoad = () => {
   const outerDiv = document.createElement('div');
   outerDiv.classList.add(
@@ -14,20 +15,20 @@ const pageLoad = () => {
   outerDiv.innerHTML = `
   <div class="is-toggle">
     <ul>
-      <li><a id="home">Home</a></li>
+      <li><a id="home"><span class="icon is-small"><i class="fas fa-home"></i></span><span>Home</span></a></li>
     </ul>
   </div>
   <div class="is-toggle is-toggle-rounded is-right">
     <ul>
       <li>
         <a id="menu">
-          <span class="icon is-small"><i class="fas fa-image"></i></span>
+          <span class="icon is-small"><i class="fas fa-pizza-slice"></i></span>
           <span>Menu</span>
         </a>
       </li>
       <li>
         <a id="contact">
-          <span class="icon is-small"><i class="fas fa-music"></i></span>
+          <span class="icon is-small"><i class="fas fa-address-card"></i></span>
           <span>Contact</span>
         </a>
       </li>
@@ -47,7 +48,7 @@ const menuPage = () => {
       <div class="card-image">
         <figure class="image is-3by2">
           <img
-            src="https://bulma.io/images/placeholders/480x320.png"
+            src="https://www.acouplecooks.com/wp-content/uploads/2019/12/Vegan-Fettucini-Alfredo-005.jpg"
             alt="Placeholder image"
           />
         </figure>
@@ -62,8 +63,8 @@ const menuPage = () => {
       </div>
       <footer class="card-footer">
         <a href="#" class="card-footer-item">Save</a>
-        <a href="#" class="card-footer-item">Edit</a>
-        <a href="#" class="card-footer-item">Delete</a>
+        <a href="#" class="card-footer-item">Add</a>
+        <a href="#" class="card-footer-item">Order</a>
       </footer>
     </div>
   </div>
@@ -72,7 +73,7 @@ const menuPage = () => {
       <div class="card-image">
         <figure class="image is-3by2">
           <img
-            src="https://bulma.io/images/placeholders/480x320.png"
+            src="https://www.acouplecooks.com/wp-content/uploads/2019/12/Vegan-Fettucini-Alfredo-005.jpg"
             alt="Placeholder image"
           />
         </figure>
@@ -87,8 +88,8 @@ const menuPage = () => {
       </div>
       <footer class="card-footer">
         <a href="#" class="card-footer-item">Save</a>
-        <a href="#" class="card-footer-item">Edit</a>
-        <a href="#" class="card-footer-item">Delete</a>
+        <a href="#" class="card-footer-item">Add</a>
+        <a href="#" class="card-footer-item">Order</a>
       </footer>
     </div>
   </div>
@@ -97,7 +98,7 @@ const menuPage = () => {
       <div class="card-image">
         <figure class="image is-3by2">
           <img
-            src="https://bulma.io/images/placeholders/480x320.png"
+            src="https://www.acouplecooks.com/wp-content/uploads/2019/12/Vegan-Fettucini-Alfredo-005.jpg"
             alt="Placeholder image"
           />
         </figure>
@@ -112,8 +113,8 @@ const menuPage = () => {
       </div>
       <footer class="card-footer">
         <a href="#" class="card-footer-item">Save</a>
-        <a href="#" class="card-footer-item">Edit</a>
-        <a href="#" class="card-footer-item">Delete</a>
+        <a href="#" class="card-footer-item">Add</a>
+        <a href="#" class="card-footer-item">Order</a>
       </footer>
     </div>
   </div>
@@ -122,7 +123,7 @@ const menuPage = () => {
       <div class="card-image">
         <figure class="image is-3by2">
           <img
-            src="https://bulma.io/images/placeholders/480x320.png"
+            src="https://www.acouplecooks.com/wp-content/uploads/2019/12/Vegan-Fettucini-Alfredo-005.jpg"
             alt="Placeholder image"
           />
         </figure>
@@ -137,8 +138,8 @@ const menuPage = () => {
       </div>
       <footer class="card-footer">
         <a href="#" class="card-footer-item">Save</a>
-        <a href="#" class="card-footer-item">Edit</a>
-        <a href="#" class="card-footer-item">Delete</a>
+        <a href="#" class="card-footer-item">Add</a>
+        <a href="#" class="card-footer-item">Order</a>
       </footer>`;
   if (ghostDiv.childNodes[0]) {
     ghostDiv.removeChild(ghostDiv.childNodes[0]);
@@ -149,18 +150,18 @@ const menuPage = () => {
 const homeInfo = () => {
   const pageInformation = document.createElement('section');
 
-  pageInformation.innerHTML = `<div class= "section">
+  pageInformation.innerHTML = `<div class= "">
   <h1 class="title">Welcome to Delicious licks</h1>
   <h2 class="subtitle">We serve you dishes to die for. Come on place your order.
    We are here to serve you<h2>
    <div class="columns">
    <div class="column">
    <figure class="image is-4by3">
-  <img src="https://bulma.io/images/placeholders/256x256.png">
+  <img class="main-image" src="https://image.freepik.com/free-photo/board-amidst-cooking-ingredients_23-2147749529.jpg">
 </figure>
 </div>
 </div>
-  </section>`;
+  </div>`;
   if (ghostDiv.childNodes[0]) {
     ghostDiv.removeChild(ghostDiv.childNodes[0]);
   }
@@ -182,7 +183,7 @@ const contactPage = () => {
     </div>
   </div>
 
-  <button class="button is-primary">Sign in</button>
+  <button class="button is-light">Send Message</button>
 </form></div>`;
   if (ghostDiv.childNodes[0]) {
     ghostDiv.removeChild(ghostDiv.childNodes[0]);
