@@ -1,14 +1,14 @@
-const content = document.getElementById("content");
-const ghostDiv = document.createElement("div");
-ghostDiv.classList.add("container");
+const content = document.getElementById('content');
+const ghostDiv = document.createElement('div');
+ghostDiv.classList.add('container');
 const pageLoad = () => {
-  const outerDiv = document.createElement("div");
+  const outerDiv = document.createElement('div');
   outerDiv.classList.add(
-    "tabs",
-    "is-toggle",
-    "is-flex",
-    "is-justify-content-space-between",
-    "is-align-items-center"
+    'tabs',
+    'is-toggle',
+    'is-flex',
+    'is-justify-content-space-between',
+    'is-align-items-center',
   );
 
   outerDiv.innerHTML = `
@@ -40,7 +40,7 @@ const pageLoad = () => {
 };
 
 const menuPage = () => {
-  const innerPage = document.createElement("section");
+  const innerPage = document.createElement('section');
   innerPage.innerHTML = `<div class="columns">
   <div class="column">
     <div class="card">
@@ -147,7 +147,7 @@ const menuPage = () => {
 };
 
 const homeInfo = () => {
-  const pageInformation = document.createElement("section");
+  const pageInformation = document.createElement('section');
 
   pageInformation.innerHTML = `<div class= "section">
   <h1 class="title">Welcome to Delicious licks</h1>
@@ -168,7 +168,7 @@ const homeInfo = () => {
 };
 
 const contactPage = () => {
-  const contactInfo = document.createElement("section");
+  const contactInfo = document.createElement('section');
   contactInfo.innerHTML = `<div><h2 class='subtitle is-center'> Contact us</h2><form class="box">
   <div class="field">
     <div class="control">
@@ -190,4 +190,6 @@ const contactPage = () => {
   ghostDiv.appendChild(contactInfo);
 };
 
-export { pageLoad, menuPage, homeInfo, contactPage };
+export {
+  pageLoad, menuPage, homeInfo, contactPage,
+};
