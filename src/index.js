@@ -3,12 +3,10 @@ import { homeInfo } from './home_info';
 import { contactPage } from './contact_page';
 import { menuPage } from './menu_page';
 
-const ghostDiv = document.getElementsByClassName('.content');
+// const ghostDiv = document.getElementsByClassName('.content');
 pageLoad();
 
-if (ghostDiv.childNodes[0]) {
-  ghostDiv.removeChild(ghostDiv.childNodes[0]);
-}
+
 const contact = document.getElementById('contact');
 const menu = document.getElementById('menu');
 const home = document.getElementById('home');
