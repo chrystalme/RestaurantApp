@@ -1,3 +1,3 @@
-import { pageLoad } from "./page_load.js";
+import { pageLoad } from './page_load';
+
 pageLoad();
-console.log("Hello World!");
