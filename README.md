@@ -28,15 +28,13 @@ cd RestaurantApp
 npm install
 ```
 
-## Live Link
-
 ## Authors
 
 👤 **Malieze Afam Ifeanyi**
 
 - GitHub: [@chrystalme](https://github.com/chrystalme)
 - Twitter: [@afam_ifeanyi](https://twitter.com/afam_ifeanyi)
-- LinkedIn: [Malieze Afam Ifeanyi(chrys)](https://linkedin.com/afam-chrys)
+- LinkedIn: [Malieze Afam Ifeanyi(chrys)](https://linkedin.com/in/afam-chrys)
 
 ## 🤝 Contributing
 
@@ -50,7 +48,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [Microverse](https://microverse.com)
+- [Microverse](https://microverse.org)
 
 ## 📝 License
 
