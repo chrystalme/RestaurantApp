@@ -1,86 +1,55 @@
 /* eslint-disable import/prefer-default-export */
-const content = document.getElementById("content");
-const ghostDiv = document.createElement("div");
-ghostDiv.classList.add("container");
+const content = document.getElementById('content');
+const ghostDiv = document.createElement('div');
+ghostDiv.classList.add('container');
 
 const pageLoad = () => {
-  const addElement = (elem) => {
-    document.createElement(elem);
-  };
-  const outerDiv = addElement("div");
+  const outerDiv = document.createElement('div');
   outerDiv.classList.add(
-    "tabs",
-    "is-toggle",
-    "is-flex",
-    "is-justify-content-space-between",
-    "is-align-items-center"
+    'tabs',
+    'is-toggle',
+    'is-flex',
+    'is-justify-content-space-between',
+    'is-align-items-center',
   );
-  const isToggle = addElement("div");
-  const list = addElement("ul");
-  const listItem1 = addElement("li");
-  const homeLink = addElement("a");
-  const icon1 = addElement("span");
-  const fasHome = addElement("i");
-  const homeSpan = addElement("span");
-  const isToggleRounded = addElement("div");
-  const list2 = addElement("ul");
-  const list2Item1 = addElement("li");
-  const menuLink = addElement("a");
-  const icon2 = addElement("span");
-  const fasMenu = addElement("i");
-  const menuSpan = addElement("span");
-  const list2Item2 = addElement("li");
-  const contactLink = addElement("a");
-  const icon3 = addElement("span");
-  const fasContact = addElement("i");
-  const contactSpan = addElement("span");
-  isToggle.classList.add("is-toggle");
-  homeLink.id = "home";
-  icon1.classList.add("icon", "is-small");
-  fasHome.classList.add("fas", "fa-home");
-  homeSpan.textContent = "Home";
-  isToggleRounded.classList.add("is-toggle", "is-toggle-rounded", "is-right");
-  menuLink.id = "menu";
-  icon2.classList.add("icon", "is-small");
-  fasMenu.classList.add("fas", "fa-pizza-slice");
-  menuSpan.textContent = "Menu";
-  contactLink.id = "contact";
-  icon3.classList.add("icon", "is-small");
-  fasContact.classList.add("fas", "fa-address-card");
-  contactSpan.textContent = "Contact";
-  outerDiv.innerHTML = `
-  <div class="is-toggle">
-    <ul>
-      <li>
-        <a id="home">
-          <span class="icon is-small">
-            <i class="fas fa-home"></i>
-          </span>
-          <span>Home</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="is-toggle is-toggle-rounded is-right">
-    <ul>
-      <li>
-        <a id="menu">
-          <span class="icon is-small"><i class="fas fa-pizza-slice"></i></span>
-          <span>Menu</span>
-        </a>
-      </li>
-      <li>
-        <a id="contact">
-          <span class="icon is-small"><i class="fas fa-address-card"></i></span>
-          <span>Contact</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  `;
+  const isToggle = document.createElement('div');
+  const list = document.createElement('ul');
+  const listItem1 = document.createElement('li');
+  const homeLink = document.createElement('a');
+  const icon1 = document.createElement('span');
+  const fasHome = document.createElement('i');
+  const homeSpan = document.createElement('span');
+  const isToggleRounded = document.createElement('div');
+  const list2 = document.createElement('ul');
+  const list2Item1 = document.createElement('li');
+  const menuLink = document.createElement('a');
+  const icon2 = document.createElement('span');
+  const fasMenu = document.createElement('i');
+  const menuSpan = document.createElement('span');
+  const list2Item2 = document.createElement('li');
+  const contactLink = document.createElement('a');
+  const icon3 = document.createElement('span');
+  const fasContact = document.createElement('i');
+  const contactSpan = document.createElement('span');
+  isToggle.classList.add('is-toggle');
+  homeLink.id = 'home';
+  icon1.classList.add('icon', 'is-small');
+  fasHome.classList.add('fas', 'fa-home');
+  homeSpan.textContent = 'Home';
+  isToggleRounded.classList.add('is-toggle', 'is-toggle-rounded', 'is-right');
+  menuLink.id = 'menu';
+  icon2.classList.add('icon', 'is-small');
+  fasMenu.classList.add('fas', 'fa-pizza-slice');
+  menuSpan.textContent = 'Menu';
+  contactLink.id = 'contact';
+  icon3.classList.add('icon', 'is-small');
+  fasContact.classList.add('fas', 'fa-address-card');
+  contactSpan.textContent = 'Contact';
+
   if (ghostDiv.childNodes[0]) {
     ghostDiv.removeChild(ghostDiv.childNodes[0]);
   }
+
   content.appendChild(outerDiv);
   content.appendChild(ghostDiv);
   outerDiv.appendChild(isToggle);
