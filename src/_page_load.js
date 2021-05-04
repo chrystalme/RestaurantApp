@@ -1,9 +1,11 @@
 /* eslint-disable import/prefer-default-export */
+
 const content = document.getElementById('content');
 const ghostDiv = document.createElement('div');
 ghostDiv.classList.add('container');
 
-const pageLoad = () => {
+const pageLoad = (element) => {
+  const elem = document.getElementById(element);
   const outerDiv = document.createElement('div');
   outerDiv.classList.add(
     'tabs',
@@ -32,23 +34,20 @@ const pageLoad = () => {
   const fasContact = document.createElement('i');
   const contactSpan = document.createElement('span');
   isToggle.classList.add('is-toggle');
-  homeLink.id = 'home';
+  listItem1.id = 'home';
+  listItem1.setAttribute('class', 'is-active');
   icon1.classList.add('icon', 'is-small');
   fasHome.classList.add('fas', 'fa-home');
   homeSpan.textContent = 'Home';
   isToggleRounded.classList.add('is-toggle', 'is-toggle-rounded', 'is-right');
-  menuLink.id = 'menu';
+  list2Item1.id = 'menu';
   icon2.classList.add('icon', 'is-small');
   fasMenu.classList.add('fas', 'fa-pizza-slice');
   menuSpan.textContent = 'Menu';
-  contactLink.id = 'contact';
+  list2Item2.id = 'contact';
   icon3.classList.add('icon', 'is-small');
   fasContact.classList.add('fas', 'fa-address-card');
   contactSpan.textContent = 'Contact';
-
-  if (ghostDiv.childNodes[0]) {
-    ghostDiv.removeChild(ghostDiv.childNodes[0]);
-  }
 
   content.appendChild(outerDiv);
   content.appendChild(ghostDiv);
@@ -71,6 +70,7 @@ const pageLoad = () => {
   contactLink.appendChild(icon3);
   icon3.appendChild(fasContact);
   contactLink.appendChild(contactSpan);
+  ghostDiv.appendChild(elem);
 };
 
 export { pageLoad };
