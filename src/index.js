@@ -1,4 +1,3 @@
-// import { pageLoad } from "./page_load";
 const homeInfo = require("./home_info");
 const contactPage = require("./contact_page");
 const menuPage = require("./menu_page");
@@ -83,7 +82,6 @@ const homeInner = () => {
     ghostDiv.removeChild(ghostDiv.childNodes[0]);
   }
   ghostDiv.appendChild(homeInfo);
-  // switchHome.innerHTML = homeInfo;
 };
 
 const menuInner = () => {
@@ -104,24 +102,3 @@ homeInner();
 home.addEventListener("click", homeInner);
 contact.addEventListener("click", contactInner);
 menu.addEventListener("click", menuInner);
-
-// const addIsActive = (item) => {
-//   item.classList.add("is-active");
-// };
-
-// document.addEventListener("click", (e) => {
-//   const target = e.target.getElementById;
-
-//   if (target === contact) {
-//     addIsActive(target);
-//     contactInner();
-//   }
-//   if (target === menu) {
-//     addIsActive(target);
-//     menuInner();
-//   }
-//   if (target === home) {
-//     addIsActive(target);
-//     homeInner();
-//   }
-// });

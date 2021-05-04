@@ -1,6 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
-// const homeInfo = () => {
 const pageInformation = document.createElement("section");
 const mainDiv = document.createElement("div");
 const title = document.createElement("h1");
@@ -30,6 +27,5 @@ mainDiv.appendChild(columns);
 columns.appendChild(column);
 column.appendChild(figureImage);
 figureImage.appendChild(mainImage);
-// return pageInformation;
-// };
+
 module.exports = pageInformation;

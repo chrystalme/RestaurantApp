@@ -1,6 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
-// const contactPage = () => {
 const contactInfo = document.createElement("section");
 const mainDiv = document.createElement("div");
 const subtitle = document.createElement("h2");
@@ -33,5 +30,5 @@ box.appendChild(field);
 field.appendChild(control);
 control.appendChild(textMessage);
 box.appendChild(btnSend);
-// };
+
 module.exports = contactInfo;

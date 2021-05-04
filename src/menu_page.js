@@ -1,17 +1,8 @@
-/* eslint-disable import/prefer-default-export */
-
-// const menuPage = () => {
 const innerPage = document.createElement("section");
 const columns = document.createElement("div");
 columns.classList.add("columns");
 for (let index = 1; index < 5; index += 1) {
   const column = document.createElement("div");
-  column.classList.add("column");
-  const column2 = document.createElement("div");
-  column.classList.add("column");
-  const column3 = document.createElement("div");
-  column.classList.add("column");
-  const column4 = document.createElement("div");
   column.classList.add("column");
   const card = document.createElement("div");
   card.classList.add("card");
@@ -59,5 +50,4 @@ for (let index = 1; index < 5; index += 1) {
   cardFooter.appendChild(cardFooteritem3);
 }
 
-// };
 module.exports = innerPage;
