@@ -28,6 +28,8 @@ cd RestaurantApp
 npm install
 ```
 
+`run application by opening /dist/index.html in the browser`
+
 ## Authors
 
 👤 **Malieze Afam Ifeanyi**
