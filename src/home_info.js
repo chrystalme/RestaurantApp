@@ -27,4 +27,4 @@ columns.appendChild(column);
 column.appendChild(figureImage);
 figureImage.appendChild(mainImage);
 
-module.exports = pageInformation;
+export default pageInformation;

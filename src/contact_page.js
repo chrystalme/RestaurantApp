@@ -31,4 +31,4 @@ field.appendChild(control);
 control.appendChild(textMessage);
 box.appendChild(btnSend);
 
-module.exports = contactInfo;
+export default contactInfo;
