@@ -1,6 +1,6 @@
-const homeInfo = require('./home_info');
-const contactPage = require('./contact_page');
-const menuPage = require('./menu_page');
+const homeInfo = require('./home_info').default;
+const contactPage = require('./contact_page').default;
+const menuPage = require('./menu_page').default;
 
 const content = document.getElementById('content');
 const ghostDiv = document.createElement('div');

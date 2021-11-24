@@ -49,4 +49,4 @@ for (let index = 1; index < 5; index += 1) {
   cardFooter.appendChild(cardFooteritem3);
 }
 
-module.exports = innerPage;
+export default innerPage;
